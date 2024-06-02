@@ -14,6 +14,7 @@ function App() {
         body: JSON.stringify({ email }),
       }
     );
+    console.log(response);
   };
   return (
     <div className="container">
