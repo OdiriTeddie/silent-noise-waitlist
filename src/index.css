@@ -33,9 +33,8 @@ body {
 }
 
 .logo {
-  background-color: #000;
   margin-inline: auto;
-  width: 8rem;
+  width: 12rem;
   padding-block: 1rem;
   padding-inline: 2rem;
 }

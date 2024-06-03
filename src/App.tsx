@@ -16,10 +16,10 @@ function App() {
 
       const result = await response.json();
       console.log(result);
-      setMessage("Thank you for signing up🎉🎉🎉");
+      setMessage("THANK YOU FOR SIGNING UP!🎉🎉🎉");
       setEmail("");
     } catch (error) {
-      setMessage("Thank you for signing up🎉🎉🎉");
+      setMessage("THANK YOU FOR SIGNING UP!🎉🎉🎉");
       setEmail("");
     }
   };
@@ -48,7 +48,7 @@ function App() {
           />
           <button type="submit" disabled={email === ""}>
             {" "}
-            Notify Me{" "}
+            NOTIFY ME{" "}
           </button>
         </form>
         {message && <p> {message} </p>}
