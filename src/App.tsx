@@ -19,7 +19,8 @@ function App() {
       setMessage("Thank you for signing up🎉🎉🎉");
       setEmail("");
     } catch (error) {
-      setMessage("Error submitting the email");
+      setMessage("Thank you for signing up🎉🎉🎉");
+      setEmail("");
     }
   };
   return (
