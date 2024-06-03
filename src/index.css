@@ -63,6 +63,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+
+  .bold {
+    font-weight: bold;
+  }
 }
 
 .waitlist-form {

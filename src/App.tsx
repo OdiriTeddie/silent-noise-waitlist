@@ -32,7 +32,10 @@ function App() {
         <div className="waitlist-content">
           <span>COMING SOON!</span>
 
-          <span>PRE ORDER SALE OPENS XX/06/23 - 3PM LDN</span>
+          <span>
+            PRE ORDER SALE OPENS{" "}
+            <span className="bold">XX/06/23 - 3PM LDN</span>{" "}
+          </span>
 
           <span>SIGN UP BELOW FOR NOTIFICATIONS WHEN WE LAUNCH</span>
         </div>
