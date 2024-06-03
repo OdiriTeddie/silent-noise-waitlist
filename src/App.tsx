@@ -2,19 +2,25 @@ import { useState } from "react";
 
 function App() {
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbzMg1bKldLa_Q26AAJXS5_AoHpB314Y9W9Lqh7_WONfrwiKCBNhGzS_k1O0gVFCVbv_/exec",
-      {
+    try {
+      const response = await fetch("https://getform.io/f/pbgxrvoa", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ email }),
-      }
-    );
-    console.log(response);
+      });
+
+      const result = await response.json();
+      console.log(result);
+      setMessage("Thank you for signing up🎉🎉🎉");
+      setEmail("");
+    } catch (error) {
+      setMessage("Error submitting the email");
+    }
   };
   return (
     <div className="container">
@@ -39,8 +45,12 @@ function App() {
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-          <button type="submit">Notify Me</button>
+          <button type="submit" disabled={email === ""}>
+            {" "}
+            Notify Me{" "}
+          </button>
         </form>
+        {message && <p> {message} </p>}
       </article>
       <footer>
         <p>This shop will be powered by Shopify</p>

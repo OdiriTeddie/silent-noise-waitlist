@@ -34,6 +34,7 @@ body {
 
 .logo {
   background-color: #000;
+  margin-inline: auto;
   width: 8rem;
   padding-block: 1rem;
   padding-inline: 2rem;
@@ -53,11 +54,11 @@ body {
 }
 
 .waitlist-content-wrapper {
-  /* outline: 1px solid red; */
   padding-block: 5px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  font-weight: 500;
 }
 .waitlist-content {
   display: flex;
@@ -68,6 +69,7 @@ body {
 .waitlist-form {
   display: flex;
   justify-content: center;
+  gap: 5px;
 
   input {
     padding-block: 8px;
@@ -82,5 +84,10 @@ body {
     padding-inline: 1rem;
     border: none;
     cursor: pointer;
+  }
+
+  button:disabled {
+    background-color: #919191;
+    cursor: not-allowed;
   }
 }
