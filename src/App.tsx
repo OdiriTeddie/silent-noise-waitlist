@@ -34,7 +34,7 @@ function App() {
 
           <span>
             PRE ORDER SALE OPENS{" "}
-            <span className="bold">XX/07/24 - 3PM LDN</span>{" "}
+            <span className="bold">12/08/24 - 3PM LDN</span>{" "}
           </span>
 
           <span>SIGN UP BELOW FOR NOTIFICATIONS WHEN WE LAUNCH</span>
